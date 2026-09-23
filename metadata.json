@@ -1,0 +1,6 @@
+{
+  "name": "ERROREN CHATS",
+  "description": "ERROREN CHATS - A complete, authentic, high-performance web messenger experience inspired by WhatsApp with real-time conversations, voice notes, media sharing, calls, and statuses.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

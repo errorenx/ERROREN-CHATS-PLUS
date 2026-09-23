@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom Scrollbars matching WhatsApp Web */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.28);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* WhatsApp Doodle SVG Wallpaper Backgrounds */
+.wallpaper-default {
+  background-color: #efeae2;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 0), radial-gradient(rgba(0, 0, 0, 0.05) 1px, #efeae2 1px);
+  background-size: 24px 24px;
+}
+.dark .wallpaper-default {
+  background-color: #0b141a;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0), radial-gradient(rgba(255, 255, 255, 0.04) 1px, #0b141a 1px);
+  background-size: 24px 24px;
+}
+
+.wallpaper-dark {
+  background-color: #0c1317;
+  background-image: linear-gradient(135deg, #111b21 25%, transparent 25%), linear-gradient(225deg, #111b21 25%, transparent 25%), linear-gradient(45deg, #111b21 25%, transparent 25%), linear-gradient(315deg, #111b21 25%, #0c1317 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+}
+
+.wallpaper-mint {
+  background-color: #e5f5ea;
+  background-image: radial-gradient(#00a884 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+.dark .wallpaper-mint {
+  background-color: #062b24;
+  background-image: radial-gradient(#00a884 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
+.wallpaper-teal {
+  background-color: #075e54;
+  background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.wallpaper-midnight {
+  background-color: #101a20;
+  background-image: radial-gradient(#202c33 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.wallpaper-sunset {
+  background: linear-gradient(135deg, #ffeedb 0%, #fad0c4 99%, #fad0c4 100%);
+}
+.dark .wallpaper-sunset {
+  background: linear-gradient(135deg, #2c1a1d 0%, #1f1118 100%);
+}
+
+/* Chat bubble tails */
+.bubble-sent {
+  position: relative;
+  border-top-right-radius: 2px !important;
+}
+.bubble-received {
+  position: relative;
+  border-top-left-radius: 2px !important;
+}
+
+/* Audio wave animation */
+@keyframes audioWave {
+  0%, 100% { height: 4px; }
+  50% { height: 20px; }
+}
+
+.animate-wave-1 { animation: audioWave 0.8s ease-in-out infinite; }
+.animate-wave-2 { animation: audioWave 0.8s ease-in-out infinite 0.2s; }
+.animate-wave-3 { animation: audioWave 0.8s ease-in-out infinite 0.4s; }
+.animate-wave-4 { animation: audioWave 0.8s ease-in-out infinite 0.1s; }
+.animate-wave-5 { animation: audioWave 0.8s ease-in-out infinite 0.3s; }
